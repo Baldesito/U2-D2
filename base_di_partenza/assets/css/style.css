@@ -33,13 +33,15 @@ header {
   padding: 2em 1.5em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 801px) {
   header {
+    display: inline-block;
     position: sticky;
     top: 1%;
     top: -1%;
     padding: 1em;
     z-index: 999;
+    width: 100%;
   }
   main article h1 img {
     position: relative;
@@ -70,7 +72,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 801px) and (max-width: 900px) {
   header .brand img {
     position: sticky;
     top: 1%;
@@ -79,14 +81,34 @@ header {
   }
   main article h1 img {
     position: relative;
-    top: -2.3rem;
-    left: 1%;
+    top: 10rem;
+    left: 100%;
     opacity: 50%;
-    width: 72%;
+    width: 100%;
+  }
+  section h2 {
+    position: absolute;
+    border-radius: 5px;
+    margin-top: -2.5rem;
+  }
+  section {
+    background-color: #e3e3e3;
+    padding: 1.5em 1em;
+    margin-bottom: 1em;
+  }
+
+  section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 1.7rem;
+    font-weight: bold;
+    background-color: #a3a3a3;
+    padding: 0px 1em;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 901px) and (max-width: 1024px) {
   header {
     position: sticky;
     top: 1%;
@@ -114,6 +136,33 @@ header {
     left: 1%;
     opacity: 50%;
     width: 72%;
+  }
+  header {
+    position: sticky;
+    top: 1%;
+    top: -1%;
+    padding: 1em;
+    z-index: 999;
+  }
+  section h2 {
+    position: absolute;
+    border-radius: 5px;
+    margin-top: -2.5rem;
+  }
+  section {
+    background-color: #e3e3e3;
+    padding: 1.5em 1em;
+    margin-bottom: 1em;
+  }
+
+  section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 1.7rem;
+    font-weight: bold;
+    background-color: #a3a3a3;
+    padding: 0px 1em;
   }
 }
 
@@ -302,6 +351,40 @@ table {
     opacity: 50%;
     width: 72%;
   }
+  header {
+    position: sticky;
+    top: 1%;
+    top: -1%;
+    padding: 1em;
+    z-index: 999;
+  }
+  main article h1 img {
+    position: relative;
+    top: -2.3rem;
+    left: 1%;
+    opacity: 100%;
+    width: 72%;
+  }
+  section h2 {
+    position: absolute;
+    border-radius: 5px;
+    margin-top: -2.5rem;
+  }
+  section {
+    background-color: #e3e3e3;
+    padding: 1.5em 1em;
+    margin-bottom: 1em;
+  }
+
+  section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 1.7rem;
+    font-weight: bold;
+    background-color: #a3a3a3;
+    padding: 0px 1em;
+  }
 }
 @media screen and (min-width: 700px) {
   table {
@@ -357,7 +440,7 @@ button {
   color: white;
   font-weight: bold;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1024px) and (max-width: 1444px) {
   input {
     display: inline-block;
     width: 70%;
@@ -370,7 +453,7 @@ button {
     width: 72%;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: ) {
   input {
     padding: 15px;
   }
